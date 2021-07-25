@@ -1,0 +1,85 @@
+{
+    "productsDefault": [
+      {
+        "id": "001",
+        "name": "Conjunto Formal",
+        "price": 109.9,
+        "photo": "https://user-images.githubusercontent.com/66647730/126888085-fcece468-4e66-436c-a60e-87162bfd69a0.png",
+        "category": "Conjunto",
+        "qtd": 5
+      },
+      {
+        "id": "002",
+        "name": "Vestido Marrom",
+        "price": 59.9,
+        "photo": "https://user-images.githubusercontent.com/66647730/126888074-48d977e6-fced-4603-9254-4e8b1b62f15c.png",
+        "category": "Vestido",
+        "qtd": 5
+      },
+      {
+        "id": "003",
+        "name": "Conjunto Despojado",
+        "price": 129.9,
+        "photo": "https://user-images.githubusercontent.com/66647730/126888095-e7a232c3-cca6-4310-ad14-d4553cb4b9e0.png",
+        "category": "Conjunto",
+        "qtd": 5
+      },
+      {
+        "id": "004",
+        "name": "Bolsa Vinho",
+        "price": 39.9,
+        "photo": "https://user-images.githubusercontent.com/66647730/126888103-ac2c2005-5d33-45fa-ac90-2c56cfca0993.png",
+        "category": "Bolsa",
+        "qtd": 5
+      },
+      {
+        "id": "005",
+        "name": "Vestido Branco Estampado",
+        "price": 89.9,
+        "photo": "https://user-images.githubusercontent.com/66647730/126888112-29b59d7c-89d4-434b-96d8-27e3384066ea.png",
+        "category": "Vestido",
+        "qtd": 5
+      },
+      {
+        "id": "006",
+        "name": "Conjunto Glamuor Branco",
+        "price": 119.9,
+        "photo": "https://user-images.githubusercontent.com/66647730/126888246-ac9054e5-dcdb-4192-8594-381d1d3668fe.png",
+        "category": "Conjunto",
+        "qtd": 5
+      },
+      {
+        "id": "007",
+        "name": "Conjunto Yellow Belt",
+        "price": 109.9,
+        "photo": "https://user-images.githubusercontent.com/66647730/126888253-41531df4-7ba1-49ff-8f19-37255190f7e5.png",
+        "category": "Conjunto",
+        "qtd": 5
+      },
+      {
+        "id": "008",
+        "name": "Blusa Azul",
+        "price": 49.9,
+        "photo": "https://user-images.githubusercontent.com/66647730/126888265-f5857112-4644-4a2e-87fd-34903a2851d2.png",
+        "category": "Blusa",
+        "qtd": 5
+      },
+      {
+        "id": "009",
+        "name": "Vestido Vermelho Verão",
+        "price": 99.9,
+        "photo": "https://user-images.githubusercontent.com/66647730/126888266-de9ffd42-f6f8-42eb-8607-6baf4c611072.png",
+        "category": "Vestido",
+        "qtd": 5
+      }    
+    ],
+
+    "admin": [
+      {
+        "id": 205,
+        "name": "Admin",
+        "email": "admin@gmail.com",
+        "password": "123456admin"
+      }
+    ]
+}
