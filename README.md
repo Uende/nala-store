@@ -2,7 +2,7 @@
 
 Esse é um projeto desenvolvio por Uende Teles como cumprimento do #Desafio2 do programa de capacticação Hiring Coders
 
-O projeto possui opção de logine cadastro por usuário ou por administrador
+O projeto possui opção de login e cadastro por usuário ou por administrador
 
 O projeto possui listagem e cadastro de produtos e usuários,
 
