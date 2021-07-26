@@ -22,8 +22,6 @@ export default function AddProductDefault(props){
         const product = dataProducts[props.index]
         let existUser = false
         let ID = new Date().getMilliseconds()
-        console.log("Product addCart")
-        console.log(product)
         if(usersParse !== null){
             usersParse.map((user) => {
                 if((user.id == userId) && (user.name == userName)){
@@ -42,11 +40,10 @@ export default function AddProductDefault(props){
                         setMsg(false)
                     }, 1000)
                 }
-                
-                if(existUser == false){
-                    alert('Registre-se ou faça login não administrativo para adicionar um produto ao seu carrinho')
-                }
             })
+        }
+        if(existUser == false){
+            alert('Registre-se ou faça login não administrativo para adicionar um produto ao seu carrinho')
         }
     }
 
