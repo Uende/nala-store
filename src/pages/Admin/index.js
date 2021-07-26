@@ -29,7 +29,7 @@ export default function Admin(){
                     <RegisterProduct />
                     <div className="products">
                     {
-                        products !== undefined ?
+                        (products !== undefined) && (products !== null) ?
                         products.map((product, index) => (
                             <div className="cardProduct" key={product.id}>
                                 <h1>{product.name}</h1>

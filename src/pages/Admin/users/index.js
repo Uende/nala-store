@@ -14,6 +14,7 @@ export default function ShowUsers(){
             <div className="cardUsers">
                 <div className="showUsers">
                 {
+                    usersParse !== null ? 
                     usersParse.map((user, index) => (
                         <div key={user.id}>
                             <h1>Nome: {user.name}</h1>
@@ -24,7 +25,7 @@ export default function ShowUsers(){
                             <h1>UF: {user.uf}</h1>
                             <RemoveUser index={`${index}`}/>
                         </div>
-                    ))
+                    )) : <h1 className="titleAdm">Não existe nenhum usuário cadastrado </h1>
                 }
                 </div>
             </div>
