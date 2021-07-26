@@ -20,9 +20,11 @@ export default function RegisterUser(){
         const usersParse = JSON.parse(users)
             
             let existUser = 0
-            usersParse.map((user) => {
-                user.email == email ? existUser += 1 : existUser = existUser
-            })
+            if(usersParse !== null){
+                usersParse.map((user) => {
+                    user.email == email ? existUser += 1 : existUser = existUser
+                })
+            }
 
         if((name != '') && (existUser == 0) && (email.length >= 13) && (email.includes('@')) && (password.length >= 6) && (address != '') && (cep.length == 8) && (uf.length == 2)){
             const dataUser = {
