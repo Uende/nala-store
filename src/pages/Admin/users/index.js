@@ -1,4 +1,3 @@
-import { useEffect, useState } from "react";
 import RemoveUser from './remove'
 import './style.css'
 

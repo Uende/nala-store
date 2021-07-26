@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useEffect } from 'react';
 import RegisterProduct from './products/add'
 import RemoveProduct from './products/remove'
 import ShowUsers from './users'

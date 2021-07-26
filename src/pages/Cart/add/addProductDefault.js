@@ -11,21 +11,8 @@ export default function AddProductDefault(props){
     useEffect(() => {
         const productsDefault = localStorage.getItem('productsDefault')
         const productsDefaultParse = JSON.parse(productsDefault)
-        // const products = localStorage.getItem('products')
-        // const productsParse = JSON.parse(products)
         setDataProducts(productsDefaultParse)
-    // if(products !== null){
-    //     //setDataProducts(...productsDefaultParse, productsParse)
-    //     console.log(products)
-    //     productsParse.map(() => {
-
-    //     })
-    //    // console.log(productsParse)
-    // }else{
-    //     //setDataProducts(productsDefaultParse)
-    // }
      }, [])
-    console.log(dataProducts)
     
 
 
