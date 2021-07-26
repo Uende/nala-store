@@ -29,7 +29,7 @@ export default function Produtos(){
           
             <div className="products">
             {
-                dataProductsDefault !== undefined ?
+                dataProductsDefault !== null ?
                 dataProductsDefault.map((product, index) => (
                     <div className="cardProduct" key={product.id}>
                         <h1>{product.name}</h1>
@@ -41,7 +41,7 @@ export default function Produtos(){
                 )) : <h1>No momento não temos nenhum produto disponível. Em breve novidades!</h1>
             }
             {
-                products !== undefined ?
+                products !== null ?
                 products.map((product, index) => (
                     <div className="cardProduct" key={product.id}>
                         <h1>{product.name}</h1>
