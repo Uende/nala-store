@@ -38,7 +38,7 @@ export default function Admin(){
                                 <h1>Categoria: {product.category}</h1>
                                 <RemoveProduct index={`${index}`}/>
                             </div>
-                        )) : 'Nenhum produto disponível para remoção'
+                        )) : <div><br /> <h1 className="titleAdm">'Nenhum produto disponível para remoção'</h1> <br /></div>
                     }
                     </div>
                     <h1 className="title">Área de clientes</h1>
