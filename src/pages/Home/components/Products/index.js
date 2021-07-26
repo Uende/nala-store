@@ -12,14 +12,14 @@ export default function Produtos(){
     let products = JSON.parse(getProducts)
 
 
-    useEffect(() => {
-        productsDefault.get('').then(res => {
-            setDataProductsDefault(res.data)
-            localStorage.setItem('productsDefault', JSON.stringify(res.data))
-        })
-        getProducts = localStorage.getItem('products')
-        products = JSON.parse(getProducts)
-    }, [])
+    // useEffect(() => {
+    //     productsDefault.get('').then(res => {
+    //         setDataProductsDefault(res.data)
+    //         localStorage.setItem('productsDefault', JSON.stringify(res.data))
+    //     })
+    //     getProducts = localStorage.getItem('products')
+    //     products = JSON.parse(getProducts)
+    // }, [])
 
 
     return(

@@ -15,13 +15,15 @@ export default function Login(){
         const usersParse = JSON.parse(users)
         
 
-        usersParse.map((user) => {
-            if((user.email == email) && (user.password == password)){
-                existUser = true
-                localStorage.setItem('userNameActive', user.name)
-                localStorage.setItem('userIdActive', user.id)
-            }
-        })
+        if(usersParse !== null){
+            usersParse.map((user) => {
+                if((user.email == email) && (user.password == password)){
+                    existUser = true
+                    localStorage.setItem('userNameActive', user.name)
+                    localStorage.setItem('userIdActive', user.id)
+                }
+            })
+        }
 
         if(existUser){
             alert('Login realizado com sucesso')

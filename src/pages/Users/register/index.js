@@ -36,7 +36,7 @@ export default function RegisterUser(){
                 "cart": []
             }
             
-            if(users !== null){
+            if(usersParse !== null){
                 localStorage.setItem(`users`, JSON.stringify([...usersParse, dataUser]))
             }else{
                 localStorage.setItem(`users`, JSON.stringify([dataUser]))

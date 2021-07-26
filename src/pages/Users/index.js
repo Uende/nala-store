@@ -11,10 +11,6 @@ export default function Users(){
     const userNameActive = localStorage.getItem('userNameActive')
     const history = useHistory()
 
-    function goHome(){
-        history.push('/')
-    }
-
     return(
         <>
             <Header />
