@@ -13,10 +13,10 @@ export default function Admin(){
     let products = JSON.parse(getProducts)
 
 
-    useEffect(() => {
-        getProducts = localStorage.getItem('products')
-        products = JSON.parse(getProducts)
-    }, [])
+    // useEffect(() => {
+    //     getProducts = localStorage.getItem('products')
+    //     products = JSON.parse(getProducts)
+    // }, [])
 
 
     return(
