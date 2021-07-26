@@ -8,13 +8,15 @@ export default function RemoveProduct(props){
 
 
     function remove(){
-        productsParse.map((product, index) => {
-            if(index == props.index){
-                productsParse.splice(props.index, 1)
-                localStorage.setItem('products', JSON.stringify(productsParse))
-                window.location.reload()
-            }
-        })
+        if(productsParse !== null){
+            productsParse.map((product, index) => {
+                if(index == props.index){
+                    productsParse.splice(props.index, 1)
+                    localStorage.setItem('products', JSON.stringify(productsParse))
+                    window.location.reload()
+                }
+            })
+        }
     }
     
 

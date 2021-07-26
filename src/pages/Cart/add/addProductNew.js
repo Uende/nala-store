@@ -22,30 +22,31 @@ export default function AddProductNew(props){
         const product = dataProducts[props.index]
         let existUser = false
         let ID = new Date().getMilliseconds()
-        console.log("Product addCart")
-        console.log(product)
-        usersParse.map((user) => {
-            if((user.id == userId) && (user.name == userName)){
-                existUser = true
-                user.cart?.push({
-                    "id": `${ID}`,
-                    "photo": product.photo,
-                    "idProduct": product.id,
-                    "nameProduct": product.name,
-                    "priceProduct": product.price
-                })
-                localStorage.setItem('users', JSON.stringify(usersParse))
-                localStorage.setItem('qtdItemCart', user.cart?.length)
-                setMsg(true)
-                setTimeout(() => {
-                    setMsg(false)
-                }, 1000)
-            }
-            
-            if(existUser == false){
-                alert('Registre-se ou faça login não administrativo para adicionar um produto ao seu carrinho')
-            }
-        })
+
+        if(usersParse !== null){
+            usersParse.map((user) => {
+                if((user.id == userId) && (user.name == userName)){
+                    existUser = true
+                    user.cart?.push({
+                        "id": `${ID}`,
+                        "photo": product.photo,
+                        "idProduct": product.id,
+                        "nameProduct": product.name,
+                        "priceProduct": product.price
+                    })
+                    localStorage.setItem('users', JSON.stringify(usersParse))
+                    localStorage.setItem('qtdItemCart', user.cart?.length)
+                    setMsg(true)
+                    setTimeout(() => {
+                        setMsg(false)
+                    }, 1000)
+                }
+                
+                if(existUser == false){
+                    alert('Registre-se ou faça login não administrativo para adicionar um produto ao seu carrinho')
+                }
+            })
+        }
     }
 
     return(

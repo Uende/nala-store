@@ -10,14 +10,16 @@ export default function RemoveItemCart(props){
 
 
     function remove(){
-        usersParse.map((user) => {
-            if((user.id == userId) && (user.name == userName)){
-                user.cart?.splice(props.index, 1)
-                localStorage.setItem('users', JSON.stringify(usersParse))
-                localStorage.setItem('qtdItemCart', user.cart?.length)
-                window.location.reload()
-            }
-        })
+        if(usersParse !== null){
+            usersParse.map((user) => {
+                if((user.id == userId) && (user.name == userName)){
+                    user.cart?.splice(props.index, 1)
+                    localStorage.setItem('users', JSON.stringify(usersParse))
+                    localStorage.setItem('qtdItemCart', user.cart?.length)
+                    window.location.reload()
+                }
+            })
+        }
     }
     
 
