@@ -54,21 +54,21 @@ export default function RegisterProduct(){
 
     return(
         <div className="register">
-            <h1 className="title">Cadastro</h1>
+            <h1>Cadastro</h1>
 
             <input className="input" type="number" placeholder='Código de identificação' onChange={e => setId(e.target.valueAsNumber)} required/>
             <input className="input" type="text" placeholder='Nome do produto' onChange={e => setName(e.target.value)} required/>
             <input className="input" type="text" placeholder='URL da imagem' onChange={e => setPhoto(e.target.value)} required/>
             <input className="input" type="number" placeholder='Preço do produto' onChange={e => setPrice(e.target.valueAsNumber)} required/>
             <input className="input" type="number" placeholder='Quantidade' onChange={e => setQtd(e.target.valueAsNumber)} required/>
-            <select  onChange={e => setCategory(e.target.value)} required>
+            <select className="input" onChange={e => setCategory(e.target.value)} required>
                     <option value="">Selecione a categoria do produto</option>
                     <option value="Vestido">Vestido</option>
                     <option value="Blusa">Blusa</option>
                     <option value="Conjunto">Conjunto</option>
                     <option value="Short">Short</option>
                 </select>
-            <input className="btn-input" type="submit" value="Cadastrar" onClick={register}/>
+            <input className="btn" type="submit" value="Cadastrar" onClick={register}/>
         </div>
     )
 }

@@ -55,7 +55,7 @@ export default function RegisterUser(){
 
     return(
         <div className="register">
-            <h1 className="title">Cadastro</h1>
+            <h1>Cadastro</h1>
 
             <input className="input" type="text" placeholder='Nome completo' onChange={(e) => setName(e.target.value)} required  />
             <input className="input" type="email" placeholder='E-mail' onChange={(e) => setEmail(e.target.value)} required />
@@ -63,7 +63,7 @@ export default function RegisterUser(){
             <input className="input" type="text" placeholder='Endereço' onChange={(e) => setAddress(e.target.value)} required />
             <input className="input" type="number" placeholder='CEP' onChange={(e) => setCep(e.target.value)} required />
             <input className="input" type="text" placeholder='UF' onChange={(e) => setUf(e.target.value)} required />
-            <input className="btn-input" type="submit" value="Cadastrar" onClick={register}/>
+            <input className="btn" type="submit" value="Cadastrar" onClick={register}/>
            
         </div>
     )

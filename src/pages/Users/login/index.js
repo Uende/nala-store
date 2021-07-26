@@ -32,17 +32,23 @@ export default function Login(){
         }    
     }
 
+    function goAdmin(){
+        history.push('/admin')
+    }
+
 
     return(
-        <div className="login">
+        <div>
             {
                 user == null ?
-                <div>
-                    <h1 className="title">Login</h1>
+                <div className="login">
+                    <h1>Login</h1>
                     <input className="input" type="email" placeholder="E-mail" onChange={e => setEmail(e.target.value)} />
                     <input className="input" type="password" placeholder="Senha" onChange={e => setPassword(e.target.value)} />
 
-                    <input className="btn-input" type="submit" value="Entrar" onClick={login} />
+                    <input className="btn" type="submit" value="Entrar" onClick={login} />
+                    <br />
+                    <h1 className="titleAdm" onClick={goAdmin}>Ir para acesso administrativo?</h1>
                 </div>
                 : <h1 className="title">Você já está logado, deseja sair? <Logout /></h1>
             } 

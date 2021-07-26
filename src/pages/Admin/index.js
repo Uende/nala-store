@@ -3,6 +3,7 @@ import RegisterProduct from './products/add'
 import RemoveProduct from './products/remove'
 import ShowUsers from './users'
 import LoginAdmin from './login'
+import Header from '../Home/components/Header'
 
 export default function Admin(){
     
@@ -20,11 +21,13 @@ export default function Admin(){
 
     return(
         <>
+            <Header />
             {
                 userName === "Admin" && userId == 205 ?
                 <div>
-                    <h1>Área de produtos</h1>
+                    <h1 className="title">Área de produtos</h1>
                     <RegisterProduct />
+                    <div className="products">
                     {
                         products !== undefined ?
                         products.map((product, index) => (
@@ -37,13 +40,16 @@ export default function Admin(){
                             </div>
                         )) : 'Nenhum produto disponível para remoção'
                     }
-                    <h1>Área de clientes</h1>
+                    </div>
+                    <h1 className="title">Área de clientes</h1>
                     <ShowUsers />
                 </div> : 
                 <div>
-                    <h1>Essa é uma área administrativa e portanto restrita, seu acesso foi negado!</h1>
                     <br />
-                    <h1>Deseja fazer o login administrativo?</h1>
+                    <br />
+                    <h1 className="titleAdm">Essa é uma área administrativa para acessar é necessário logar com o usuário administrativo</h1>
+                    <br />
+                    <h1 className="titleAdm">Deseja fazer o login administrativo?</h1>
                     <LoginAdmin />
                 </div>
             }

@@ -20,7 +20,7 @@ export default function RemoveUser(props){
 
     return(
         <>
-            <button className="btn-cart" onClick={remove}>Remover usuário</button>
+            <button className="btn" onClick={remove}>Remover usuário</button>
         </>
     )
 }

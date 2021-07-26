@@ -1,0 +1,68 @@
+:root{
+    --textTitle: 19px;
+}
+
+.logo{
+    width: 100%;
+    height: 25vh;
+    background-image: url("../../../../images/logo.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #121212;
+}
+
+.menu{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+    padding-top: 3%;
+    padding-bottom: 3%;
+    box-shadow: 3px 2px 10px rgba(54, 54, 54, 0.164);
+    background-color: #F8F8F8;   
+}
+
+.menu-item{
+    display: flex;
+    align-items: center;
+}
+
+.iconMenu{
+    height: 15vh;
+}
+
+.titleMenu{
+    font-size: var(--textTitle);
+    padding-left: 10%;
+}
+
+.titleMenu:hover{
+    cursor: pointer;
+}
+
+.iconMenu:hover{
+    cursor: pointer;
+}
+
+
+@media (max-width: 800px) {
+
+    .menu{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .menu-item{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 3%;
+    }
+    .titleMenu{
+        font-size: 14px;
+        margin-left: -10%;
+    }
+
+}

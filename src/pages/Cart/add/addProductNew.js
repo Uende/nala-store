@@ -63,7 +63,7 @@ export default function AddProductNew(props){
 
     return(
         <>
-            <button className="btn-cart" onClick={add}>Adicionar ao carrinho</button>
+            <button className="btn" onClick={add}>Adicionar ao carrinho</button>
             {msg ? <h3>Produto adicionado ao carrinho</h3> : ''}
         </>
     )

@@ -1,6 +1,8 @@
 import { useEffect, useState } from "react";
 import { useHistory } from 'react-router';
-import RemoveItemCart from './remove'
+import RemoveItemCart from './remove';
+import Header from '../Home/components/Header'
+
 
 export default function Cart(){
 
@@ -20,19 +22,18 @@ export default function Cart(){
         })
     }, [])
 
-    function goHome(){
-        history.push('/')
-    }
 
     return(
         <>
+            <Header />
             {
-                qtdItemCart > 0 ? <h1>Total de itens no carrinho: {qtdItemCart} </h1> : <h1>Carrinho</h1>
+                qtdItemCart > 0 ? <h1 className="title">Total de itens no carrinho: {qtdItemCart} </h1> : <h1 className="title">Carrinho</h1>
             }
+            <div className="products">
             {
                 dataUserCart.length !== 0 ? 
                 dataUserCart.map((item, index) => (
-                    <div key={item.id}>
+                    <div className="cardProduct" key={item.id}>
                         <img src={item.photo} alt="" width="auto" height="100px"/>
                         <h2 className="titleItem">{item.nameProduct}</h2>
                         <h3 className="titleItem">{item.priceProduct.toFixed(2)}</h3>
@@ -41,7 +42,7 @@ export default function Cart(){
                 ))
                 : <h1>Você não possui produto no carrinho :(</h1>
             }
-            <button className="btn-input" onClick={goHome}>Voltar para Home</button>
+            </div>
         </>
     )
 }

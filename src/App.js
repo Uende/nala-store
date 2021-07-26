@@ -1,11 +1,12 @@
 import Routes from './routes'
+import './GlobalStyle.css';
+import Footer from './pages/Home/components/Footer'
 
 function App() {
   return (
     <>
-      {/* <Home nome="Maria" idade="2"/>
-      <Register /> */}
       <Routes />
+      <Footer />
     </>
   );
 }

@@ -9,6 +9,6 @@ export default function Logout(){
     }
 
     return(
-        <button className="btn-input" onClick={logout}>Sair</button>
+        <button className="btn" onClick={logout}>Sair</button>
     )
 }

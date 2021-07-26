@@ -1,0 +1,81 @@
+.title{
+    font-size: 38px;
+    text-align: center;
+    padding: 5%;
+    border-top: 1px solid #121212;
+    border-bottom: 1px solid #121212;
+    margin-top: 0%;
+}
+
+.products{
+    margin-top: 5%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    
+}
+
+.cardProduct{
+    display: block;
+    background-color: #F8F8F8;
+    width: 30%;
+    text-align: center;
+    font-family: 'Caveat', coursive;
+    margin-bottom: 5%;
+    box-shadow: 2px 3px 5px rgba(180, 180, 180, 0.411);
+    border-radius: 10px;
+    padding-bottom: 3%;
+}
+
+.cardProduct:hover{
+    margin-bottom: 5%;
+    box-shadow: 2px 3px 10px rgba(180, 180, 180, 0.411);
+}
+
+.cardProduct > img{
+    width: 280px;
+    height: auto;
+}
+
+.cardProduct > h1{
+    font-size: 40px;
+    padding: 4%;
+}
+
+.cardProduct > h2{
+    font-size: 35px;
+    padding-top: 4%;
+}
+
+.cardProduct > h2:hover{
+    background-color: #121212;
+    color: #F8F8F8;
+    padding-bottom: 4%;
+}
+
+.cardProduct > h3{
+    font-size: 22px;
+    margin-top: -5%;
+    font-weight: 500;
+}
+
+
+.btn-cart{
+    height: 10vh;
+    background-color: #121212;
+    color: #F8F8F8;
+    padding-top: 3%;
+    padding-bottom: 3%;
+    padding-left: 8%;
+    padding-right: 8%;
+    font-size: 18px;
+    border-radius: 10px;
+    border: none;
+    margin-top: 4%;
+}
+
+.btn-cart:hover{
+    background-color: #0c0c0c;
+    cursor: pointer;
+}

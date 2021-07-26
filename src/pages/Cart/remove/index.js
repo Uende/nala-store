@@ -23,7 +23,7 @@ export default function RemoveItemCart(props){
 
     return(
         <>
-            <button className="btn-cart" onClick={remove}>Remover ao carrinho</button>
+            <button className="btn" onClick={remove}>Remover ao carrinho</button>
         </>
     )
 }
