@@ -9,12 +9,12 @@ export default function Admin(){
     
     const userName = localStorage.getItem('userNameActive')
     const userId = localStorage.getItem('userIdActive')
-    let getProducts = localStorage.getItem('products')
+    let getProducts = localStorage.getItem('products') || []
     let products = JSON.parse(getProducts)
 
 
     useEffect(() => {
-        getProducts = localStorage.getItem('products')
+        getProducts = localStorage.getItem('products') || []
         products = JSON.parse(getProducts)
     }, [])
 

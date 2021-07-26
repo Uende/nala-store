@@ -4,7 +4,7 @@ import './style.css'
 
 export default function ShowUsers(){
 
-    const users = localStorage.getItem('users')
+    const users = localStorage.getItem('users') || []
     const usersParse = JSON.parse(users)
 
     

@@ -30,23 +30,22 @@ export default function Header(){
             <div className="logo"></div>
             <div className="menu">
                 <div className="menu-item">
-                    <img className="iconMenu" src={home} alt="iconHome" />
+                    <img className="iconMenu" onClick={goHome} src={home} alt="iconHome" />
                     <h2 className="titleMenu" onClick={goHome}>Home</h2>
-                    {/* <Link to='/'></Link> */}
                 </div>
             {
                 userNameActive === null ? 
                <div className="menu-item">
-                   <img className="iconMenu" src={user} alt="iconUser" />
+                   <img className="iconMenu" onClick={goLoginOrRegister} src={user} alt="iconUser" />
                    <h2 className="titleMenu" onClick={goLoginOrRegister}><h3>Entrar ou cadastrar</h3></h2>
                </div> : 
                <div className="menu-item">
-                   <img className="iconMenu" src={user} alt="iconUser" />
+                   <img className="iconMenu" onClick={goLoginOrRegister} src={user} alt="iconUser" />
                    <h2 className="titleMenu" onClick={goLoginOrRegister}>Olá, {userNameActive}</h2>
                </div>
             }
                 <div className="menu-item">
-                    <img className="iconMenu" src={bag} alt="iconUser" />
+                    <img className="iconMenu" onClick={goLoginOrRegister} src={bag} alt="iconUser" />
                     <h2 className="titleMenu" onClick={goCart}>Carrinho</h2>
                 </div>
             </div>

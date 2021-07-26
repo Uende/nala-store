@@ -7,18 +7,20 @@ import Admin from './pages/Admin'
 import Products from './pages/Home/components/Products'
 import Cart from './pages/Cart'
 import RegisterUser from './pages/Users/register'
+import Main from './pages/Home/components/Main'
 
 export default function Routes(){
     return(
         <>
             <BrowserRouter>
                 <Switch>
-                    <Route path="/" exact component={Users}/>
-                    <Route path="/users" component={Home}/>
+                    <Route path="/" exact component={Home}/>
+                    <Route path="/users" component={Users}/>
                     <Route path="/admin" component={Admin}/>
                     <Route path="/products" component={Products}/>
                     <Route path="/register-user" component={RegisterUser}/>
                     <Route path="/cart" component={Cart}/>
+                    <Route path="/main" component={Main}/>
                 </Switch>
             </BrowserRouter>
         </>

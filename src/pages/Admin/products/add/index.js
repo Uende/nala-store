@@ -14,7 +14,7 @@ export default function RegisterProduct(){
 
     function register(){
         
-        const products = localStorage.getItem('products')
+        const products = localStorage.getItem('products') || []
         const productsParse = JSON.parse(products)
             
         let existId = 0

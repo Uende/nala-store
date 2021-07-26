@@ -3,6 +3,7 @@ import './GlobalStyle.css';
 import Footer from './pages/Home/components/Footer'
 
 function App() {
+
   return (
     <>
       <Routes />

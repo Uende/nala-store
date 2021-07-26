@@ -10,7 +10,7 @@ export default function Produtos(){
     const [dataProductsDefault, setDataProductsDefault] = useState()
     let getProducts = localStorage.getItem('products')
     let products = JSON.parse(getProducts)
-
+    localStorage.setItem('productsDefault', [])
 
     useEffect(() => {
         productsDefault.get('').then(res => {
