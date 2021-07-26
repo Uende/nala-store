@@ -33,7 +33,7 @@ export default function Cart(){
             }
             <div className="products">
             {
-                (dataUserCart !== undefined) && (dataUserCart !== null) ? 
+                (dataUserCart.length !== 0) && (dataUserCart !== undefined) && (dataUserCart !== null) ? 
                 dataUserCart.map((item, index) => (
                     <div className="cardProduct" key={item.id}>
                         <img src={item.photo} alt="" width="auto" height="100px"/>

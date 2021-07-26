@@ -43,7 +43,7 @@ export default function AddProductDefault(props){
             }
             
             if(existUser == false){
-                alert('Registre-se ou faça login para adicionar um produto ao seu carrinho')
+                alert('Registre-se ou faça login não administrativo para adicionar um produto ao seu carrinho')
             }
         })
     }
