@@ -8,7 +8,7 @@ export default function Cart(){
 
     const userName = localStorage.getItem('userNameActive')
     const userId = localStorage.getItem('userIdActive')
-    const users = localStorage.getItem('users') || []
+    const users = localStorage.getItem('users')
     const usersParse = JSON.parse(users)
     const [dataUserCart, setDataUserCart] = useState([])
     let qtdItemCart = localStorage.getItem('qtdItemCart')

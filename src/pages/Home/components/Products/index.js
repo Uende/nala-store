@@ -3,6 +3,7 @@ import productsDefault from '../../../../api/products';
 import AddProductDefault from '../../../Cart/add/addProductDefault'
 import AddProductNew from '../../../Cart/add/addProductNew'
 import './style.css';
+import axios from 'axios'
 
 
 export default function Produtos(){
@@ -10,10 +11,9 @@ export default function Produtos(){
     const [dataProductsDefault, setDataProductsDefault] = useState()
     let getProducts = localStorage.getItem('products')
     let products = JSON.parse(getProducts)
-    localStorage.setItem('productsDefault', [])
 
     useEffect(() => {
-        productsDefault.get('').then(res => {
+        axios.get('https://my-json-server.typicode.com/Uende/nala-store/productsDefault').then(res => {
             setDataProductsDefault(res.data)
             localStorage.setItem('productsDefault', JSON.stringify(res.data))
         })
