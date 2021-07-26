@@ -31,7 +31,7 @@ export default function Cart(){
             }
             <div className="products">
             {
-                dataUserCart.length !== 0 ? 
+                (dataUserCart.length !== 0) ||  (dataUserCart !== undefined) ? 
                 dataUserCart.map((item, index) => (
                     <div className="cardProduct" key={item.id}>
                         <img src={item.photo} alt="" width="auto" height="100px"/>

@@ -7,6 +7,7 @@ import Admin from './pages/Admin'
 import Products from './pages/Home/components/Products'
 import Cart from './pages/Cart'
 import RegisterUser from './pages/Users/register'
+import RegisterProduct from './pages/Admin/products/add'
 
 export default function Routes(){
     return(
@@ -19,6 +20,7 @@ export default function Routes(){
                     <Route path="/products" component={Products}/>
                     <Route path="/register-user" component={RegisterUser}/>
                     <Route path="/cart" component={Cart}/>
+                    <Route path="/addproduct" component={RegisterProduct}/>
                 </Switch>
             </BrowserRouter>
         </>
