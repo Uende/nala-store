@@ -15,11 +15,13 @@ export default function Cart(){
     const history = useHistory()
 
     useEffect(() => {
-        usersParse.map((user) => {
-            if((user.id == userId) && (user.name == userName)){
-                setDataUserCart(user.cart)
-            }
-        })
+        if(usersParse !== null){
+            usersParse.map((user) => {
+                if((user.id == userId) && (user.name == userName)){
+                    setDataUserCart(user.cart)
+                }
+            })
+        }
     }, [])
 
 
