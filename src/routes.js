@@ -14,11 +14,11 @@ export default function Routes(){
             <BrowserRouter>
                 <Switch>
                     <Route path="/" exact component={Home}/>
-                    <Route path="/users" exact component={Users}/>
-                    <Route path="/admin" exact component={Admin}/>
-                    <Route path="/products" exact component={Products}/>
-                    <Route path="/register-user" exact component={RegisterUser}/>
-                    <Route path="/cart" exact component={Cart}/>
+                    <Route path="/users" component={Users}/>
+                    <Route path="/admin" component={Admin}/>
+                    <Route path="/products" component={Products}/>
+                    <Route path="/register-user" component={RegisterUser}/>
+                    <Route path="/cart" component={Cart}/>
                 </Switch>
             </BrowserRouter>
         </>
