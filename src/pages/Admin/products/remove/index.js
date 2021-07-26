@@ -3,7 +3,6 @@ import { useEffect, useState } from "react";
 
 export default function RemoveProduct(props){
 
-   // const productId = localStorage.getItem('userIdActive')
     const products = localStorage.getItem('products')
     const productsParse = JSON.parse(products)
 

@@ -7,7 +7,6 @@ import Admin from './pages/Admin'
 import Products from './pages/Home/components/Products'
 import Cart from './pages/Cart'
 import RegisterUser from './pages/Users/register'
-import Main from './pages/Home/components/Main'
 
 export default function Routes(){
     return(
@@ -20,7 +19,6 @@ export default function Routes(){
                     <Route path="/products" component={Products}/>
                     <Route path="/register-user" component={RegisterUser}/>
                     <Route path="/cart" component={Cart}/>
-                    <Route path="/main" component={Main}/>
                 </Switch>
             </BrowserRouter>
         </>

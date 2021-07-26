@@ -13,10 +13,10 @@ export default function Admin(){
     let products = JSON.parse(getProducts)
 
 
-    // useEffect(() => {
-    //     getProducts = localStorage.getItem('products')
-    //     products = JSON.parse(getProducts)
-    // }, [])
+    useEffect(() => {
+        getProducts = localStorage.getItem('products')
+        products = JSON.parse(getProducts)
+    }, [])
 
 
     return(
@@ -27,7 +27,7 @@ export default function Admin(){
                 <div>
                     <h1 className="title">Área de produtos</h1>
                     <RegisterProduct />
-                    {/* <div className="products">
+                    <div className="products">
                     {
                         products !== undefined ?
                         products.map((product, index) => (
@@ -40,7 +40,7 @@ export default function Admin(){
                             </div>
                         )) : 'Nenhum produto disponível para remoção'
                     }
-                    </div> */}
+                    </div>
                     <h1 className="title">Área de clientes</h1>
                     <ShowUsers />
                 </div> : 
